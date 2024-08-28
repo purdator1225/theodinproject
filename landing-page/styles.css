@@ -1,0 +1,158 @@
+:root {
+    --background-color: #1F2937;
+    --button-color: #3882F6;
+    --section-background:#e5e7eb;
+
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%
+}
+
+.hero-section{
+    background-color: var(--background-color);
+    align-items: center;
+    padding: 100px 100px
+    
+
+}
+
+.hero-flex-wrapper{
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+    gap: 4rem;
+}
+
+.hero-section .hero-left{
+    flex:1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+
+}
+
+.hero-left h1{
+    font-size:60px;
+}
+
+button{
+    background-color: var(--button-color);
+    color: white;
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+
+.hero-right{
+    flex:1;
+}
+
+nav{
+    position: sticky;
+    top: 0px;
+    color: white;
+    background-color: var(--background-color);
+    
+}
+
+.navbar-menu{
+    display: flex;
+    list-style-type: none;
+    max-width: 1280px;
+    margin: auto;
+    padding: 20px 0px;
+    justify-content: space-between;
+}
+
+.navbar-links{
+    display: flex;
+    gap: 1rem;
+}
+
+.info-section{
+    max-width: 1280px;
+    margin: auto;
+    padding: 40px 0px;
+    
+}
+
+.info-section h1{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.box-wrapper{
+    display: flex;
+    margin: auto;
+    gap: 4rem;
+}
+
+.box-wrapper *{
+    flex: 1
+    
+}
+
+.box{
+    border: 1px solid blue;
+    height: 100px;
+
+    
+}
+
+.quote-section{
+    padding: 100px 0px;
+    background-color: var(--section-background);
+}
+
+.quote-wrapper{
+    max-width: 1280px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.large-quote{
+    font-size: 60px;
+}
+
+cite{
+    font-size: 32px;;
+}
+
+.footer{
+    padding: 60px 0px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.footer-wrapper{
+    background-color: var(--button-color);
+    padding: 30px 60px;
+    display: flex;
+    color: white;
+    border-radius: 10px;
+}
+
+.footer-wrapper *{
+    flex-grow: 1;
+    
+}
+
+.footer-wrapper button{
+    border: 1px solid white;
+    flex-grow: 0.3;
+}
