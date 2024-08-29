@@ -73,7 +73,15 @@ nav{
     max-width: 1280px;
     margin: auto;
     padding: 20px 0px;
-    justify-content: space-between;
+    
+}
+
+.navbar-menu :first-child{
+    margin-right: auto;
+}
+
+.navbar-menu :not(:first-child){
+    margin-left: 1rem;
 }
 
 .navbar-links{
