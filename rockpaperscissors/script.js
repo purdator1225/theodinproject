@@ -21,21 +21,21 @@ function getComputerChoice(){
 
 
 function getHumanChoice(){
-    return prompt('Please enter your choice')
+    return prompt('Please enter rock, paper or scissors')
 }
 
 
 function playRound(humanChoice, computerChoice){
 
 if (humanChoice.toLowerCase()=== computerChoice.toLowerCase()) {
-    console.log('Its a tie')
+  alert(`Computer also chose ${humanChoice}`)
 }
 
 else if (humanChoice.toLowerCase() === 'rock' && computerChoice.toLowerCase()==='scissors'){
 
     humanScore +=1;
 
-    console.log(`You win! ${humanChoice} beats ${computerChoice} `)
+   alert(`You win! ${humanChoice} beats ${computerChoice} `)
 
    }
 
@@ -43,7 +43,7 @@ else if (humanChoice.toLowerCase() === 'rock' && computerChoice.toLowerCase()===
 
     humanScore +=1;
 
-    console.log(`You win! ${humanChoice} beats ${computerChoice} `)
+    alert(`You win! ${humanChoice} beats ${computerChoice} `)
 }
 
 
@@ -51,7 +51,7 @@ else if (humanChoice.toLowerCase() === 'rock' && computerChoice.toLowerCase()===
 
     humanScore +=1;
 
-    console.log(`You win! ${humanChoice} beats ${computerChoice} `)
+    alert(`You win! ${humanChoice} beats ${computerChoice} `)
 
    }
 
@@ -59,7 +59,7 @@ else if (humanChoice.toLowerCase() === 'rock' && computerChoice.toLowerCase()===
 
     computerScore +=1;
 
-    console.log(`You lose! ${computerChoice} beats ${humanChoice} `)
+    alert(`You lose! ${computerChoice} beats ${humanChoice} `)
 
    }
 
@@ -67,7 +67,7 @@ else if (humanChoice.toLowerCase() === 'rock' && computerChoice.toLowerCase()===
 
     computerScore +=1;
 
-    console.log(`You lose! ${computerChoice} beats ${humanChoice} `)
+    alert(`You lose! ${computerChoice} beats ${humanChoice} `)
 }
 
 
@@ -75,16 +75,12 @@ else if (humanChoice.toLowerCase() === 'rock' && computerChoice.toLowerCase()===
 
     computerScore +=1;
 
-    console.log(`You lose! ${computerChoice} beats ${humanChoice} `)
+   alert(`You lose! ${computerChoice} beats ${humanChoice} `)
 
    }
 
 
-   let humanScoreSpan = document.querySelector('.human-score')
-   let computerScoreSpan = document.querySelector('.computer-score')
-
-   humanScoreSpan.innerText = humanScore.toString()
-   computerScoreSpan.innerText = computerScore.toString()
+  
 
 
 }
@@ -97,12 +93,27 @@ function playGame(){
         const humanSelection = getHumanChoice()
         const computerSelection = getComputerChoice()
         playRound(humanSelection, computerSelection);
+
+         let humanScoreSpan = document.querySelector('.human-score')
+   let computerScoreSpan = document.querySelector('.computer-score')
+
+   humanScoreSpan.innerText = humanScore.toString()
+   computerScoreSpan.innerText = computerScore.toString()
         currentRound +=1;
 
         let roundSpan = document.querySelector('.round-number')
 
         roundSpan.innerText = currentRound.toString()
     }
+
+    if (humanScore>computerScore) {
+        alert('You Win')
+
+    }
+
+    else if (computerScore>humanScore) alert('You Lose')
+
+    else alert('Its a tie!')
 
 }
 
