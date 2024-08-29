@@ -1,0 +1,23 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+}
+
+.new-div{
+    border:0px solid black;
+ 
+}
+
+.new-div:hover{
+    background-color: salmon;
+}
+
