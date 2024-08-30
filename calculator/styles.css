@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.calculator{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    min-width: 400px;
+
+}
+
+.calculator :first-child{
+    text-align: end;
+}
+
+.operators{
+    background-color: salmon;
+}
+
+.calculator * {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid lightcyan;
+}
+
+.answer {
+    background: gray;
+    color: white;
+    grid-column: span 4;
+}
+
+.numbers{
+    background-color: coral;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
