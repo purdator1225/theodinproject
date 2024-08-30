@@ -1,4 +1,5 @@
-*{
+
+*, ::before, ::after{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -35,6 +36,11 @@
     background-color: coral;
 }
 
+.cancel{
+    background-color: black;
+    color: white;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -43,3 +49,6 @@ body{
     justify-content: center;
 }
 
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

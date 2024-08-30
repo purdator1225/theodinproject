@@ -112,7 +112,6 @@ buttons.forEach((button) => {
                 updateDisplay(operateValue)
 
 
-
             }
 
             //else run operation
