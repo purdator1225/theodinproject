@@ -31,23 +31,22 @@ function operate(firstNum, operator, lastNum) {
         case '+':
             return add(firstOperatingNum, secondOperatingNum)
 
-            break;
+
 
         case '-':
             return subtract(firstOperatingNum, secondOperatingNum)
 
-            break;
 
         case '*':
             return multiply(firstOperatingNum, secondOperatingNum)
 
-            break;
+        
 
         case '/':
             return divide(firstOperatingNum, secondOperatingNum)
 
         default:
-            break;
+
     }
 
 }
@@ -185,6 +184,7 @@ function updateDisplay(num) {
 function clearDisplay() {
     answerDisplay.innerText = '0'
 }
+
 
 
 
