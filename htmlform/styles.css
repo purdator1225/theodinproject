@@ -1,0 +1,119 @@
+*,::before,::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Norse";
+    src: url(fonts/Norse-Bold.otf);
+}
+
+
+body{
+    min-height: 100vh;
+}
+
+h1,h2,h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sign-in-left{
+    background: url('https://images.unsplash.com/photo-1566840849929-5a60a802788d?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    flex: 2;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+.sign-in-page-wrapper{
+    display: flex;
+    height: 100vh;
+}
+
+.sign-in-right{
+    flex: 3;
+    padding: 2rem;
+    align-self: center;
+}
+
+.sign-in-right * {
+    max-width: 600px;
+}
+
+
+.sign-in-left h1{
+    font-family: Norse;
+    color:white;
+    font-size: 60px;
+    line-height: 60px;
+    
+}
+
+.logo-wrapper{
+
+    display: flex;
+    position: relative;
+    top: 20vh;
+    background-color:rgba(0,0,0,0.3);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem
+
+}
+
+.logo-wrapper img {
+    max-height: 100px;
+
+}
+
+.form-content-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.form-input-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+form{
+    background-color: white;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1); ;
+
+}
+
+input{
+    border: 1px solid #E5E7EB;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+}
+label{
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+.account-button{
+    background-color: #AF3A0E;
+    border: none;
+    color: white;
+    padding : 20px 30px;
+    border-radius: 10px;
+}
+
+input:focus{
+    outline: none;
+  border-color: blue;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+input:invalid{
+    border:1px solid red;
+}
+

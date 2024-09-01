@@ -6,6 +6,11 @@
 
 }
 
+@font-face {
+    font-family: 'League Spartan';
+    src: url(fonts/LeagueSpartan-Bold.otf);
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -42,8 +47,38 @@ img{
 
 }
 
+.popup{
+    background: linear-gradient(45deg,blue,green);
+    position: absolute;
+    border-radius: 20px;;
+    padding: 100px;
+    max-width: 500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    left: 50%;
+    top: 50%;
+      opacity: 1;
+  scale: 1;
+    transition: all 0.25s;
+  transition-behavior: allow-discrete;
+    transform: translate(-50%, -50%);
+}
+
+.hidden{
+    display: none;
+opacity: 0;
+  scale: 0;
+  width: 0;
+}
+
 .hero-left h1{
     font-size:60px;
+    font-family: 'League Spartan';
+}
+
+.hero-left h1::selection{
+   background-color: pink;
+  
 }
 
 button{
@@ -52,6 +87,11 @@ button{
     padding: 10px 20px;
     border: 0px;
     border-radius: 10px;
+
+}
+
+button:active{
+    background-color: purple;
 }
 
 
@@ -164,3 +204,4 @@ cite{
     border: 1px solid white;
     flex-grow: 0.3;
 }
+

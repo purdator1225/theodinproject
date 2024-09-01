@@ -1,0 +1,46 @@
+.button-body{
+    width: 50px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-modal{
+    background:linear-gradient(45deg, orange, yellow);
+    padding: 6rem;
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+
+}
+
+.input-group button{
+    flex-grow : 1;
+    
+}
+
+.input-group input {
+    flex-basis: 250px;
+    flex-grow: 3;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0px;
+    
+}

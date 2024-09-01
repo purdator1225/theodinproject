@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>This is HTML Form</title>
+</head>
+<body>
+    <div class="sign-in-page-wrapper">
+        <div class="sign-in-left">
+            <div class="logo-wrapper">   <img class="logo-image" src="images/odin-lined.png" alt="odin"><h1>ODIN</h1></div>
+         
+        </div>
+
+        <div class="sign-in-right">
+            <h1>This is not a real online service, but you know you want to sign up. Odin Project can only be good for you, if you put in the hours
+
+            </h1>
+
+            <form action="">
+
+                <h2>Lets Do This!</h2>
+
+                <div class="form-content-wrapper">
+                    <div class="form-input-wrapper">
+                        <label for="first_name">FIRST NAME</label>
+                                        <input type="text" placeholder="First Name" 
+                                        required name="first_name" id="first_name">
+                    </div>
+                <div class="form-input-wrapper">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" placeholder="Last Name" name="last_name" id="last_name">
+                </div>
+                <div class="form-input-wrapper">
+                    <label for="email" id="email" name="email">EMAIL</label>
+                    <input type="email">
+                </div>
+                 <div class="form-input-wrapper">
+                     <label for="phone" id="phone" name="phone">PHONE NUMBER</label>
+                                     <input type="phone">
+                 </div>
+                <div class="form-input-wrapper">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must be >8 characters , contain one uppercase" required>
+                </div>
+                <div class="form-input-wrapper">
+                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                     <input type="password" placeholder="Confirm Password" id="confirm_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                </div>
+
+                
+                </div>
+                
+                <button class="account-button" type="submit">Create Account</button>
+
+
+            </form>
+
+            
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
