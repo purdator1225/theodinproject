@@ -1,0 +1,89 @@
+li {
+  list-style: none;
+}
+
+
+.carousell-button img{
+  width: 50px;
+  height: 50px;
+}
+
+.carousell{
+    position: relative;
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+
+}
+
+.carousell-track{
+    padding: 0;
+    margin:0;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+
+
+.carousell-track-container{
+    background: lightblue;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousell-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousell-slide{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.carousell-button{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+}
+
+.left{
+    left: -40px;
+}
+
+.right{
+    right: -40px;
+}
+
+.carousell-nav{
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+.carousell-page-dot{
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+}
+
+.carousell-page-dot.current-slide{
+    background-color: red;
+}
+
+.is-hidden{
+    display:none;
+}
