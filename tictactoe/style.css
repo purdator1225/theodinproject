@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+.board-holder{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 300px;
+}
+
+.ttt-cell{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    border: 1px solid black;
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px
+}
