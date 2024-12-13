@@ -1,6 +1,6 @@
 
 export const loadAbout = ()=>{
-    const title = document.createElement('h1')
+const title = document.createElement('h1')
 const para = document.createElement('p')
 
 
